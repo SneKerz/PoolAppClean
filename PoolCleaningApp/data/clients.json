@@ -1,0 +1,19 @@
+[
+    {
+      "id": "1",
+      "name": "Client 1",
+      "phoneNumber": "+123456789",
+      "address": "123 Fake St, City, Country",
+      "poolSize": "Piscina 8x4 -48mc",
+      "interventions": []
+    },
+    {
+      "id": "2",
+      "name": "Client 2",
+      "phoneNumber": "+987654321",
+      "address": "456 Real Ave, City, Country",
+      "poolSize": "Piscina 10x5 -60mc",
+      "interventions": []
+    }
+  ]
+  

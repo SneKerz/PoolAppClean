@@ -1,0 +1,1238 @@
+{
+  "poolSize": [
+    {
+      "size": "30-40 mc",
+      "pH": [
+        {
+          "level": 7.0,
+          "Cl_ppm": [
+            {
+              "Cl": "0 ppm",
+              "tablets": "",
+              "grams": "360 gr"
+            },
+            {
+              "Cl": "0.3 ppm",
+              "tablets": "",
+              "grams": "350 gr"
+            },
+            {
+              "Cl": "1 ppm",
+              "tablets": "",
+              "grams": "300 gr"
+            },
+            {
+              "Cl": "1.5 ppm",
+              "tablets": "",
+              "grams": "250 gr"
+            },
+            {
+              "Cl": "2 ppm",
+              "tablets": "",
+              "grams": "",
+              "antialgae_liters": "0.5 l"
+            }
+          ]
+        },
+        {
+          "level": 7.4,
+          "Cl_ppm": [
+            {
+              "Cl": "0 ppm",
+              "tablets": "2 tabl"
+            },
+            {
+              "Cl": "0.3 ppm",
+              "tablets": "2 tabl"
+            },
+            {
+              "Cl": "1 ppm",
+              "tablets": "1-2 tabl"
+            },
+            {
+              "Cl": "1.5 ppm",
+              "tablets": "1-2 tabl"
+            },
+            {
+              "Cl": "2 ppm",
+              "tablets": "2 tabl"
+            }
+          ]
+        },
+        {
+          "level": 7.8,
+          "ph_minus_kg": "1.3 kg",
+          "Cl_ppm": [
+            {
+              "Cl": "0 ppm",
+              "tablets": "",
+              "grams": "380 gr"
+            },
+            {
+              "Cl": "0.3 ppm",
+              "tablets": "",
+              "grams": "360 gr"
+            },
+            {
+              "Cl": "1 ppm",
+              "tablets": "",
+              "grams": "300 gr"
+            },
+            {
+              "Cl": "1.5 ppm",
+              "tablets": "",
+              "grams": "",
+              "antialgae_liters": "0.4 l"
+            },
+            {
+              "Cl": "2 ppm",
+              "tablets": "",
+              "grams": "",
+              "antialgae_liters": "0.4 l"
+            }
+          ],
+          "Cl_tablets": [
+            {
+              "Cl": "0 ppm",
+              "tablets": "2 tabl"
+            },
+            {
+              "Cl": "0.3 ppm",
+              "tablets": "2 tabl"
+            },
+            {
+              "Cl": "1 ppm",
+              "tablets": "2 tabl"
+            },
+            {
+              "Cl": "1.5 ppm",
+              "tablets": "2 tabl"
+            },
+            {
+              "Cl": "2 ppm",
+              "tablets": "1-2 tabl"
+            }
+          ]
+        },
+        {
+          "level": 8.0,
+          "ph_minus_kg": "1.9 kg",
+          "Cl_ppm": [
+            {
+              "Cl": "0 ppm",
+              "tablets": "",
+              "grams": "420 gr"
+            },
+            {
+              "Cl": "0.3 ppm",
+              "tablets": "",
+              "grams": "400 gr"
+            },
+            {
+              "Cl": "1 ppm",
+              "tablets": "",
+              "grams": "300 gr"
+            },
+            {
+              "Cl": "1.5 ppm",
+              "tablets": "",
+              "grams": "",
+              "antialgae_liters": "0.4 l"
+            },
+            {
+              "Cl": "2 ppm",
+              "tablets": "",
+              "grams": "",
+              "antialgae_liters": "0.4 l"
+            }
+          ],
+          "Cl_tablets": [
+            {
+              "Cl": "0 ppm",
+              "tablets": "2 tabl"
+            },
+            {
+              "Cl": "0.3 ppm",
+              "tablets": "2 tabl"
+            },
+            {
+              "Cl": "1 ppm",
+              "tablets": "2 tabl"
+            },
+            {
+              "Cl": "1.5 ppm",
+              "tablets": "2 tabl"
+            },
+            {
+              "Cl": "2 ppm",
+              "tablets": "2 tabl"
+            }
+          ]
+        },
+        {
+          "level": 8.2,
+          "ph_minus_kg": "2-3 kg",
+          "Cl_ppm": [
+            {
+              "Cl": "0 ppm",
+              "tablets": "",
+              "grams": "600 gr"
+            },
+            {
+              "Cl": "0.3 ppm",
+              "tablets": "",
+              "grams": "500 gr"
+            },
+            {
+              "Cl": "1 ppm",
+              "tablets": "",
+              "grams": "400 gr"
+            },
+            {
+              "Cl": "1.5 ppm",
+              "tablets": "",
+              "grams": "300 gr"
+            },
+            {
+              "Cl": "2 ppm",
+              "tablets": "",
+              "grams": "",
+              "antialgae_liters": "0.6 l"
+            }
+          ],
+          "Cl_tablets": [
+            {
+              "Cl": "0 ppm",
+              "tablets": "2-3 tabl"
+            },
+            {
+              "Cl": "0.3 ppm",
+              "tablets": "2 tabl"
+            },
+            {
+              "Cl": "1 ppm",
+              "tablets": "2 tabl"
+            },
+            {
+              "Cl": "1.5 ppm",
+              "tablets": "2 tabl"
+            },
+            {
+              "Cl": "2 ppm",
+              "tablets": "2 tabl"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "size": "50-60 mc",
+      "pH": [
+        {
+          "level": 7.0,
+          "Cl_ppm": [
+            {
+              "Cl": "0 ppm",
+              "tablets": "",
+              "grams": "450 gr"
+            },
+            {
+              "Cl": "0.3 ppm",
+              "tablets": "",
+              "grams": "450 gr"
+            },
+            {
+              "Cl": "1 ppm",
+              "tablets": "",
+              "grams": "400 gr"
+            },
+            {
+              "Cl": "1.5 ppm",
+              "tablets": "",
+              "grams": "300 gr"
+            },
+            {
+              "Cl": "2 ppm",
+              "tablets": "",
+              "grams": "",
+              "antialgae_liters": "0.6 l"
+            }
+          ]
+        },
+        {
+          "level": 7.4,
+          "Cl_ppm": [
+            {
+              "Cl": "0 ppm",
+              "tablets": "2 tabl"
+            },
+            {
+              "Cl": "0.3 ppm",
+              "tablets": "2 tabl"
+            },
+            {
+              "Cl": "1 ppm",
+              "tablets": "2 tabl"
+            },
+            {
+              "Cl": "1.5 ppm",
+              "tablets": "2 tabl"
+            },
+            {
+              "Cl": "2 ppm",
+              "tablets": "2 tabl"
+            }
+          ]
+        },
+        {
+          "level": 7.8,
+          "ph_minus_kg": "1.6 kg",
+          "Cl_ppm": [
+            {
+              "Cl": "0 ppm",
+              "tablets": "",
+              "grams": "480 gr"
+            },
+            {
+              "Cl": "0.3 ppm",
+              "tablets": "",
+              "grams": "450 gr"
+            },
+            {
+              "Cl": "1 ppm",
+              "tablets": "",
+              "grams": "400 gr"
+            },
+            {
+              "Cl": "1.5 ppm",
+              "tablets": "",
+              "grams": "350 gr"
+            },
+            {
+              "Cl": "2 ppm",
+              "tablets": "",
+              "grams": "",
+              "antialgae_liters": "0.6 l"
+            }
+          ],
+          "Cl_tablets": [
+            {
+              "Cl": "0 ppm",
+              "tablets": "2 tabl"
+            },
+            {
+              "Cl": "0.3 ppm",
+              "tablets": "2 tabl"
+            },
+            {
+              "Cl": "1 ppm",
+              "tablets": "2 tabl"
+            },
+            {
+              "Cl": "1.5 ppm",
+              "tablets": "2 tabl"
+            },
+            {
+              "Cl": "2 ppm",
+              "tablets": "2 tabl"
+            }
+          ]
+        },
+        {
+          "level": 8.2,
+          "ph_minus_kg": "2-3 kg",
+          "Cl_ppm": [
+            {
+              "Cl": "0 ppm",
+              "tablets": "",
+              "grams": "600 gr"
+            },
+            {
+              "Cl": "0.3 ppm",
+              "tablets": "",
+              "grams": "500 gr"
+            },
+            {
+              "Cl": "1 ppm",
+              "tablets": "",
+              "grams": "400 gr"
+            },
+            {
+              "Cl": "1.5 ppm",
+              "tablets": "",
+              "grams": "300 gr"
+            },
+            {
+              "Cl": "2 ppm",
+              "tablets": "",
+              "grams": "",
+              "antialgae_liters": "0.6 l"}
+            ],
+            "Cl_tablets": [
+              {
+                "Cl": "0 ppm",
+                "tablets": "2-3 tabl"
+              },
+              {
+                "Cl": "0.3 ppm",
+                "tablets": "2 tabl"
+              },
+              {
+                "Cl": "1 ppm",
+                "tablets": "2 tabl"
+              },
+              {
+                "Cl": "1.5 ppm",
+                "tablets": "2 tabl"
+              },
+              {
+                "Cl": "2 ppm",
+                "tablets": "2 tabl"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "size": "70-80 mc",
+        "pH": [
+          {
+            "level": 7.0,
+            "Cl_ppm": [
+              {
+                "Cl": "0 ppm",
+                "tablets": "",
+                "grams": "600-700 gr"
+              },
+              {
+                "Cl": "0.3 ppm",
+                "tablets": "",
+                "grams": "600 gr"
+              },
+              {
+                "Cl": "1 ppm",
+                "tablets": "",
+                "grams": "450 gr"
+              },
+              {
+                "Cl": "1.5 ppm",
+                "tablets": "",
+                "grams": "300 gr"
+              },
+              {
+                "Cl": "2 ppm",
+                "tablets": "",
+                "grams": "",
+                "antialgae_liters": "0.8 l"
+              }
+            ]
+          },
+          {
+            "level": 7.4,
+            "Cl_ppm": [
+              {
+                "Cl": "0 ppm",
+                "tablets": "2-3 tabl"
+              },
+              {
+                "Cl": "0.3 ppm",
+                "tablets": "2-3 tabl"
+              },
+              {
+                "Cl": "1 ppm",
+                "tablets": "2 tabl"
+              },
+              {
+                "Cl": "1.5 ppm",
+                "tablets": "2 tabl"
+              },
+              {
+                "Cl": "2 ppm",
+                "tablets": "2 tabl"
+              }
+            ]
+          },
+          {
+            "level": 7.8,
+            "ph_minus_kg": "2.5 kg",
+            "Cl_ppm": [
+              {
+                "Cl": "0 ppm",
+                "tablets": "",
+                "grams": "700 gr"
+              },
+              {
+                "Cl": "0.3 ppm",
+                "tablets": "",
+                "grams": "600 gr"
+              },
+              {
+                "Cl": "1 ppm",
+                "tablets": "",
+                "grams": "450-500 gr"
+              },
+              {
+                "Cl": "1.5 ppm",
+                "tablets": "",
+                "grams": "400 gr"
+              },
+              {
+                "Cl": "2 ppm",
+                "tablets": "",
+                "grams": "",
+                "antialgae_liters": "0.8 l"
+              }
+            ],
+            "Cl_tablets": [
+              {
+                "Cl": "0 ppm",
+                "tablets": "3 tabl"
+              },
+              {
+                "Cl": "0.3 ppm",
+                "tablets": "3 tabl"
+              },
+              {
+                "Cl": "1 ppm",
+                "tablets": "2-3 tabl"
+              },
+              {
+                "Cl": "1.5 ppm",
+                "tablets": "2 tabl"
+              },
+              {
+                "Cl": "2 ppm",
+                "tablets": "2 tabl"
+              }
+            ]
+          },
+          {
+            "level": 8.2,
+            "ph_minus_kg": "3.6 kg",
+            "Cl_ppm": [
+              {
+                "Cl": "0 ppm",
+                "tablets": "",
+                "grams": "700 gr"
+              },
+              {
+                "Cl": "0.3 ppm",
+                "tablets": "",
+                "grams": "650 gr"
+              },
+              {
+                "Cl": "1 ppm",
+                "tablets": "",
+                "grams": "500 gr"
+              },
+              {
+                "Cl": "1.5 ppm",
+                "tablets": "",
+                "grams": "400 gr"
+              },
+              {
+                "Cl": "2 ppm",
+                "tablets": "",
+                "grams": "",
+                "antialgae_liters": "0.8 l"
+              }
+            ],
+            "Cl_tablets": [
+              {
+                "Cl": "0 ppm",
+                "tablets": "3 tabl"
+              },
+              {
+                "Cl": "0.3 ppm",
+                "tablets": "3 tabl"
+              },
+              {
+                "Cl": "1 ppm",
+                "tablets": "2-3 tabl"
+              },
+              {
+                "Cl": "1.5 ppm",
+                "tablets": "2 tabl"
+              },
+              {
+                "Cl": "2 ppm",
+                "tablets": "2 tabl"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "size": "90-100 mc",
+        "pH": [
+          {
+            "level": 7.0,
+            "Cl_ppm": [
+              {
+                "Cl": "0 ppm",
+                "tablets": "",
+                "grams": "800 gr"
+              },
+              {
+                "Cl": "0.3 ppm",
+                "tablets": "",
+                "grams": "700 gr"
+              },
+              {
+                "Cl": "1 ppm",
+                "tablets": "",
+                "grams": "600 gr"
+              },
+              {
+                "Cl": "1.5 ppm",
+                "tablets": "",
+                "grams": "400-500 gr"
+              },
+              {
+                "Cl": "2 ppm",
+                "tablets": "",
+                "grams": "",
+                "alba_liters": "1 l"
+              }
+            ]
+          },
+          {
+            "level": 7.2,
+            "Cl_ppm": [
+              {
+                "Cl": "0 ppm",
+                "tablets": "3 tabl"
+              },
+              {
+                "Cl": "0.3 ppm",
+                "tablets": "3 tabl"
+              },
+              {
+                "Cl": "1 ppm",
+                "tablets": "2-3 tabl"
+              },
+              {
+                "Cl": "1.5 ppm",
+                "tablets": "2-3 tabl"
+              },
+              {
+                "Cl": "2 ppm",
+                "tablets": "2 tabl"
+              }
+            ]
+          },
+          {
+            "level": 7.4,
+            "note": "Depinde cat de cald este si cat de bun este filtrul"
+          },
+          {
+            "level": 7.8,
+            "ph_minus_kg": "3 kg",
+            "Cl_ppm": [
+              {
+                "Cl": "0 ppm",
+                "tablets": "",
+                "grams": "800-900 gr"
+              },
+              {
+                "Cl": "0.3 ppm",
+                "tablets": "",
+                "grams": "800 gr"
+              },
+              {
+                "Cl": "1 ppm",
+                "tablets": "",
+                "grams": "600 gr"
+              },
+              {
+                "Cl": "1.5 ppm",
+                "tablets": "",
+                "grams": "500 gr"
+              },
+              {
+                "Cl": "2 ppm",
+                "tablets": "",
+                "grams": "",
+                "alba_liters": "1 l"
+              }
+            ],
+            "Cl_tablets": [
+              {
+                "Cl": "0 ppm",
+                "tablets": "3-4 tabl (depinde cat este de cald)"
+              },
+              {
+                "Cl": "0.3 ppm",
+                "tablets": "3-4 tabl"
+              },
+              {
+                "Cl": "1 ppm",
+                "tablets": "3-4 tabl"
+              },
+              {
+                "Cl": "1.5 ppm",
+                "tablets": "3 tabl"
+              },
+              {
+                "Cl": "2 ppm",
+                "tablets": "3 tabl"
+              }
+            ]
+          },
+          {
+            "level": 8.2,
+            "ph_minus_kg": "4.5-5 kg",
+            "Cl_ppm": [
+              {
+                "Cl": "0 ppm",
+                "tablets": "",
+                "grams": "1 kg"
+              },
+              {
+                "Cl": "0.3 ppm",
+                "tablets": "",
+                "grams": "900 gr"
+              },
+              {
+                "Cl": "1 ppm",
+                "tablets": "",
+                "grams": "700 gr"
+              },
+              {
+                "Cl": "1.5 ppm",
+                "tablets": "",
+                "grams": "500 gr"
+              },
+              {
+                "Cl": "2 ppm",
+                "tablets": "",
+                "grams": "400 gr"
+              }
+            ],
+            "Cl_tablets": [
+              {
+                "Cl": "0 ppm",
+                "tablets": "4 tabl"
+              },
+              {
+                "Cl": "0.3 ppm",
+                "tablets": "4 tabl"
+              },
+              {
+                "Cl": "1 ppm",
+                "tablets": "4 tabl"
+              },
+              {
+                "Cl": "1.5 ppm",
+                "tablets": "4 tabl"
+              },
+              {
+                "Cl": "2 ppm",
+                "tablets": "3 tabl"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "size": "110-130 mc",
+        "pH": [
+          {
+            "level": 7.0,
+            "Cl_ppm": [
+              {
+                "Cl": "0 ppm",
+                "tablets": "",
+                "grams": "1.1 kg"
+              },
+              {
+                "Cl": "0.3 ppm",
+                "tablets": "",
+                "grams": "1 kg"
+              },
+              {
+                "Cl": "1 ppm",
+                "tablets": "",
+                "grams": "700-800 gr"
+              },
+              {
+                "Cl": "1.5 ppm",
+                "tablets": "",
+                "grams": "600 gr"
+              },
+              {
+                "Cl": "2 ppm",
+                "tablets": "",
+                "grams": "500 gr"
+              }
+            ]
+          },
+          {
+            "level": 7.4,
+            "Cl_ppm": [
+              {
+                "Cl": "0 ppm",
+                "tablets": "3 tabl"
+              },
+              {
+                "Cl": "0.3 ppm",
+                "tablets": "3 tabl"
+              },
+              {
+                "Cl": "1 ppm",
+                "tablets": "3 tabl"
+              },
+              {
+                "Cl": "1.5 ppm",
+                "tablets": "2-3 tabl"
+              },
+              {
+                "Cl": "2 ppm",
+                "tablets": "2 tabl"
+              }
+            ]
+          },
+          {
+            "level": 7.8,
+            "ph_minus_kg": "3.6 kg",
+            "Cl_ppm": [
+              {
+                "Cl": "0 ppm",
+                "tablets": "",
+                "grams": "1.3 kg"
+              },
+              {
+                "Cl": "0.3 ppm",
+                "tablets": "",
+                "grams": "1.2 kg"
+              },
+              {
+                "Cl": "1 ppm",
+                "tablets": "",
+                "grams": "800 gr"
+              },
+              {
+                "Cl": "1.5 ppm",
+                "tablets": "",
+                "grams": "700 gr"},
+                {
+                  "Cl": "2 ppm",
+                  "tablets": "",
+                  "grams": "600 gr"
+                }
+              ],
+              "Cl_tablets": [
+                {
+                  "Cl": "0 ppm",
+                  "tablets": "4 tabl"
+                },
+                {
+                  "Cl": "0.3 ppm",
+                  "tablets": "4 tabl"
+                },
+                {
+                  "Cl": "1 ppm",
+                  "tablets": "4 tabl"
+                },
+                {
+                  "Cl": "1.5 ppm",
+                  "tablets": "4 tabl"
+                },
+                {
+                  "Cl": "2 ppm",
+                  "tablets": "4 tabl"
+                }
+              ]
+            },
+            {
+              "level": 8.2,
+              "ph_minus_kg": "5.5 kg",
+              "Cl_ppm": [
+                {
+                  "Cl": "0 ppm",
+                  "tablets": "",
+                  "grams": "1.3 kg"
+                },
+                {
+                  "Cl": "0.3 ppm",
+                  "tablets": "",
+                  "grams": "1.3 kg"
+                },
+                {
+                  "Cl": "1 ppm",
+                  "tablets": "",
+                  "grams": "900 gr"
+                },
+                {
+                  "Cl": "1.5 ppm",
+                  "tablets": "",
+                  "grams": "800 gr"
+                },
+                {
+                  "Cl": "2 ppm",
+                  "tablets": "",
+                  "grams": "600-700 gr"
+                }
+              ],
+              "Cl_tablets": [
+                {
+                  "Cl": "0 ppm",
+                  "tablets": "4 tabl"
+                },
+                {
+                  "Cl": "0.3 ppm",
+                  "tablets": "4 tabl"
+                },
+                {
+                  "Cl": "1 ppm",
+                  "tablets": "4 tabl"
+                },
+                {
+                  "Cl": "1.5 ppm",
+                  "tablets": "4 tabl"
+                },
+                {
+                  "Cl": "2 ppm",
+                  "tablets": "4 tabl"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "size": "180-200 mc",
+          "pH": [
+            {
+              "level": 7.0,
+              "Cl_ppm": [
+                {
+                  "Cl": "0 ppm",
+                  "tablets": "",
+                  "grams": "2 kg"
+                },
+                {
+                  "Cl": "0.3 ppm",
+                  "tablets": "",
+                  "grams": "1.8 kg"
+                },
+                {
+                  "Cl": "1 ppm",
+                  "tablets": "",
+                  "grams": "1.6 kg"
+                },
+                {
+                  "Cl": "1.5 ppm",
+                  "tablets": "",
+                  "grams": "0.8 kg"
+                },
+                {
+                  "Cl": "2 ppm",
+                  "tablets": "",
+                  "grams": "",
+                  "alba_liters": "1.5 l"
+                }
+              ]
+            },
+            {
+              "level": 7.4,
+              "Cl_ppm": [
+                {
+                  "Cl": "0 ppm",
+                  "tablets": "5 tabl"
+                },
+                {
+                  "Cl": "0.3 ppm",
+                  "tablets": "5 tabl"
+                },
+                {
+                  "Cl": "1 ppm",
+                  "tablets": "5 tabl"
+                },
+                {
+                  "Cl": "1.5 ppm",
+                  "tablets": "5 tabl"
+                },
+                {
+                  "Cl": "2 ppm",
+                  "tablets": "5 tabl"
+                }
+              ]
+            },
+            {
+              "level": 7.8,
+              "ph_minus_kg": "6.3 kg",
+              "Cl_ppm": [
+                {
+                  "Cl": "0 ppm",
+                  "tablets": "",
+                  "grams": "2 kg"
+                },
+                {
+                  "Cl": "0.3 ppm",
+                  "tablets": "",
+                  "grams": "1.8 kg"
+                },
+                {
+                  "Cl": "1 ppm",
+                  "tablets": "",
+                  "grams": "1.6 kg"
+                },
+                {
+                  "Cl": "1.5 ppm",
+                  "tablets": "",
+                  "grams": "0.8 kg"
+                },
+                {
+                  "Cl": "2 ppm",
+                  "tablets": "",
+                  "grams": "600 gr"
+                }
+              ],
+              "Cl_tablets": [
+                {
+                  "Cl": "0 ppm",
+                  "tablets": "6 tabl"
+                },
+                {
+                  "Cl": "0.3 ppm",
+                  "tablets": "6 tabl"
+                },
+                {
+                  "Cl": "1 ppm",
+                  "tablets": "6 tabl"
+                },
+                {
+                  "Cl": "1.5 ppm",
+                  "tablets": "6 tabl"
+                },
+                {
+                  "Cl": "2 ppm",
+                  "tablets": "6 tabl"
+                }
+              ]
+            },
+            {
+              "level": 8.2,
+              "ph_minus_kg": "9.5 kg",
+              "Cl_ppm": [
+                {
+                  "Cl": "0 ppm",
+                  "tablets": "",
+                  "grams": "2 kg"
+                },
+                {
+                  "Cl": "0.3 ppm",
+                  "tablets": "",
+                  "grams": "2 kg"
+                },
+                {
+                  "Cl": "1 ppm",
+                  "tablets": "",
+                  "grams": "1.8 kg"
+                },
+                {
+                  "Cl": "1.5 ppm",
+                  "tablets": "",
+                  "grams": "1.2 kg"
+                },
+                {
+                  "Cl": "2 ppm",
+                  "tablets": "",
+                  "grams": "700 gr"
+                }
+              ],
+              "Cl_tablets": [
+                {
+                  "Cl": "0 ppm",
+                  "tablets": "6 tabl"
+                },
+                {
+                  "Cl": "0.3 ppm",
+                  "tablets": "6 tabl"
+                },
+                {
+                  "Cl": "1 ppm",
+                  "tablets": "6 tabl"
+                },
+                {
+                  "Cl": "1.5 ppm",
+                  "tablets": "6 tabl"
+                },
+                {
+                  "Cl": "2 ppm",
+                  "tablets": "6 tabl"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "size": "150-180 mc",
+          "pH": [
+            {
+              "level": 7.0,
+              "Cl_ppm": [
+                {
+                  "Cl": "0 ppm",
+                  "tablets": "",
+                  "grams": "1.5 kg"
+                },
+                {
+                  "Cl": "0.3 ppm",
+                  "tablets": "",
+                  "grams": "1.2 kg"
+                },
+                {
+                  "Cl": "1 ppm",
+                  "tablets": "",
+                  "grams": "1 kg"
+                },
+                {
+                  "Cl": "1.5 ppm",
+                  "tablets": "",
+                  "grams": "0.8 kg"
+                },
+                {
+                  "Cl": "2 ppm",
+                  "tablets": "",
+                  "grams": "",
+                  "alba_liters": "1.5 l"
+                }
+              ]
+            },
+            {
+              "level": 7.4,
+              "Cl_ppm": [
+                {
+                  "Cl": "0 ppm",
+                  "tablets": "4 tabl"
+                },
+                {
+                  "Cl": "0.3 ppm",
+                  "tablets": "4 tabl"
+                },
+                {
+                  "Cl": "1 ppm",
+                  "tablets": "4 tabl"
+                },
+                {
+                  "Cl": "1.5 ppm",
+                  "tablets": "4 tabl"
+                },
+                {
+                  "Cl": "2 ppm",
+                  "tablets": "4 tabl"
+                }
+              ]
+            },
+            {
+              "level": 7.8,
+              "ph_minus_kg": "5 kg",
+              "Cl_ppm": [
+                {
+                  "Cl": "0 ppm",
+                  "tablets": "",
+                  "grams": "1.5 kg"
+                },
+                {
+                  "Cl": "0.3 ppm",
+                  "tablets": "",
+                  "grams": "1.2 kg"
+                },
+                {
+                  "Cl": "1 ppm",
+                  "tablets": "",
+                  "grams": "1 kg"
+                },
+                {
+                  "Cl": "1.5 ppm",
+                  "tablets": "",
+                  "grams": "0.8 kg"
+                },
+                {
+                  "Cl": "2 ppm",
+                  "tablets": "",
+                  "grams": "600 gr"
+                }
+              ],
+              "Cl_tablets": [
+                {
+                  "Cl": "0 ppm",
+                  "tablets": "4 tabl"
+                },
+                {
+                  "Cl": "0.3 ppm",
+                  "tablets": "4 tabl"
+                },
+                {
+                  "Cl": "1 ppm",
+                  "tablets": "4 tabl"
+                },
+                {
+                  "Cl": "1.5 ppm",
+                  "tablets": "4 tabl"
+                },
+                {
+                  "Cl": "2 ppm",
+                  "tablets": "4 tabl"
+                }
+              ]
+            },
+            {
+              "level": 8.2,
+              "ph_minus_kg": "7.5 kg",
+              "Cl_ppm": [
+                {
+                  "Cl": "0 ppm",
+                  "tablets": "",
+                  "grams": "1.6 kg"
+                },
+                {
+                  "Cl": "0.3 ppm",
+                  "tablets": "",
+                  "grams": "1.4 kg"
+                },
+                {
+                  "Cl": "1 ppm",
+                  "tablets": "",
+                  "grams": "1 kg"
+                },
+                {
+                  "Cl": "1.5 ppm",
+                  "tablets": "",
+                  "grams": "800 gr"
+                },
+                {
+                  "Cl": "2 ppm",
+                  "tablets": "",
+                  "grams": "700 gr"
+                }
+              ],
+              "Cl_tablets": [
+                {
+                  "Cl": "0 ppm",
+                  "tablets": "4 tabl"
+                },
+                {
+                  "Cl": "0.3 ppm",
+                  "tablets": "4 tabl"
+                },
+                {
+                  "Cl": "1 ppm",
+                  "tablets": "4 tabl"
+                },
+                {
+                  "Cl": "1.5 ppm",
+                  "tablets": "4 tabl"
+                },
+                {
+                  "Cl": "2 ppm",
+                  "tablets": "4 tabl"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+     
