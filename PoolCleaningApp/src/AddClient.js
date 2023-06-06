@@ -82,12 +82,12 @@ const AddClient = () => {
  });
 
  if (response.ok) {
- Alert.alert('Success', 'Client added successfully');
+ Alert.alert('Success', 'Client adăugat');
  if (typeof onClientAdded === 'function') {
  onClientAdded(); // Invoke the onClientAdded callback if it's a function
  }
  } else {
- Alert.alert('Error', 'Failed to add client');
+ Alert.alert('Error', 'Clientul NU a fost adăugat');
  }
  } catch (error) {
  console.error('Error adding client:', error);
@@ -97,10 +97,10 @@ const AddClient = () => {
 
  return (
  <View style={styles.container}>
- <TextInput style={styles.input} placeholder="Name" placeholderTextColor="#999" value={name} onChangeText={setName} />
- <TextInput style={styles.input} placeholder="Phone Number" placeholderTextColor="#999" value={phoneNumber} onChangeText={setPhoneNumber} />
- <TextInput style={styles.input} placeholder="Address" placeholderTextColor="#999" value={address} onChangeText={setAddress} />
- <TextInput style={styles.input} placeholder="Pool Size" placeholderTextColor="#999" value={poolSize} onChangeText={setPoolSize} />
+ <TextInput style={styles.input} placeholder="Nume Client" placeholderTextColor="#999" value={name} onChangeText={setName} />
+ <TextInput keyboardType="numeric" style={styles.input} placeholder="Număr de telefon client" placeholderTextColor="#999" value={phoneNumber} onChangeText={setPhoneNumber} />
+ <TextInput style={styles.input} placeholder="Adresă client" placeholderTextColor="#999" value={address} onChangeText={setAddress} />
+ <TextInput keyboardType="numeric" style={styles.input} placeholder="Dimensiune piscină (mc)" placeholderTextColor="#999" value={poolSize} onChangeText={setPoolSize} />
  <TouchableOpacity style={styles.button} onPress={pickImage}>
  <Text style={styles.buttonText}>Select Image</Text>
  </TouchableOpacity>

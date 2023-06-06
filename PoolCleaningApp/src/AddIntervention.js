@@ -3,7 +3,7 @@ import { View, TextInput, Button, Text, ScrollView, TouchableOpacity, Image, Ale
 import * as ImagePicker from 'expo-image-picker';
 
 
-const AddIntervention = ({ route }) => {
+const AddIntervention = ({ route, navigation }) => {
   const { client } = route.params;
   const fieldsInitialState = {
     clor: '',
@@ -31,7 +31,9 @@ const AddIntervention = ({ route }) => {
   };
 
   const [fields, setFields] = useState(fieldsInitialState);
-  const [image, setImage] = useState(null);
+  const [startImage, setStartImage] = useState(null);
+  const [endImage, setEndImage] = useState(null);
+  const [showDataTable, setShowDataTable] = useState(false);
 
   const labels = Object.keys(fields);
 
@@ -51,7 +53,11 @@ const AddIntervention = ({ route }) => {
     });
 
     if (!result.cancelled) {
-      setImage(result.uri);
+      if (startImage === null) {
+        setStartImage(result.uri);
+      } else {
+        setEndImage(result.uri);
+      }
     }
   };
 
@@ -59,8 +65,8 @@ const AddIntervention = ({ route }) => {
     const newIntervention = {
       clientId: client.id,
       date: new Date().toISOString().split('T')[0],
-      interventionImage: image,
-
+      startImage: startImage,
+      endImage: endImage,
       ...fields,
     };
 
@@ -73,8 +79,9 @@ const AddIntervention = ({ route }) => {
         body: JSON.stringify(newIntervention),
       });
 
-      if (response.ok) {f
+      if (response.ok) {
         Alert.alert('Success', 'Intervention added successfully');
+        navigation.goBack();
       } else {
         Alert.alert('Error', 'Failed to add intervention');
       }
@@ -83,6 +90,11 @@ const AddIntervention = ({ route }) => {
       Alert.alert('Error', 'Failed to add intervention');
     }
   };
+
+
+  useEffect(() => {
+    pickImage();
+  }, []);
 
   useEffect(() => {
     const firstEmptyField = emptyFields[0];
@@ -113,43 +125,45 @@ const AddIntervention = ({ route }) => {
   const poolData = data.poolSize;
   
   // Find the pool size in the data and get its pHLevels
-  const poolSizeData = poolData.find(item => item.poolSize === nearestPoolSize);
+  const poolSizeData = poolData.find(item => item.poolSize && item.poolSize.some(sizeObj => sizeObj.size === nearestPoolSize));
   const pHLevels = poolSizeData ? poolSizeData.pHLevels : [];
   
   const getRecommendation = (fields) => {
-    // Extract the values from the `fields` object
     const { clor, pH } = fields;
-  
-    // Make sure the pH and Cl values are valid numbers before proceeding
+    
     if (isNaN(clor) || isNaN(pH)) {
-      return "Invalid pH or Cl values";
+      return {
+        error: "Invalid pH or Cl values",
+      };
     }
-  
-    // Convert numbers back to string, to match JSON data structure
+    
     const clorStr = clor.toString() + " ppm";
-    const pHStr = pH.toString();
-  
-    // Find the matching pH level in the JSON data
-    const matchingPHLevel = pHLevels.find(item => item.level === pHStr);
-  
-    if (matchingPHLevel) {
-      // Try to find the matching Cl value
-      const clValueObj = matchingPHLevel.Cl_ppm.find(clObj => clObj.Cl === clorStr);
-      if (clValueObj) {
-        // Combine the chemicals to return the recommendation
-        let recommendationText = '';
-        for (const [chemName, chemValue] of Object.entries(clValueObj)) {
-          if (chemName !== "Cl") {
-            recommendationText += chemValue + " " + chemName + ", ";
-          }
+    const matchingPoolSizeData = poolData.find(item => item.size === nearestPoolSize);
+    
+    if (matchingPoolSizeData) {
+      const matchingPHLevel = matchingPoolSizeData.pH.find(item => item.level === pH);
+      if (matchingPHLevel) {
+        const clValueObj = matchingPHLevel.Cl_ppm.find(clObj => clObj.Cl === clorStr)
+        if (clValueObj) {
+          return {
+            pH: matchingPHLevel.level,
+            Cl: clValueObj.Cl,
+            tablets: clValueObj.tablets,
+            grams: clValueObj.grams,
+            antialgae_liters: clValueObj.antialgae_liters,
+            ph_minus_kg: matchingPHLevel.ph_minus_kg,
+          };
         }
-        return recommendationText.slice(0, -2); // Remove the trailing comma and space
       }
     }
-  
-    // Return a default message if no recommendation was found
-    return "No recommendation found";
+    return {
+      error: "No recommendation found",
+    };
   };
+  
+
+  
+  
   
   // Modified the following function to call getRecommendation() for each input change
   const handleInputChange = (name, value) => {
@@ -159,8 +173,11 @@ const AddIntervention = ({ route }) => {
     }
     const updatedFields = { ...fields, [name]: updatedValue };
     setFields(updatedFields);
-    setRecommendation(getRecommendation(updatedFields));
   };
+  
+  useEffect(() => {
+    setRecommendation(getRecommendation(fields));
+  }, [fields]);
   
 
 
@@ -168,25 +185,25 @@ return (
   <ScrollView style={styles.container}>
  
     <View style={styles.columnContainer}>
-  <View style={styles.column}>
-    <View style={styles.categoryContainer}>
+  <View style={styles.columnContainer}>
+    <View style={styles.collumn3}>
       <View style={styles.categoryHeader}>
         <Text style={styles.categoryHeaderText}>Data Intervenției</Text>
       </View>
-      <View style={[styles.categoryContent, { justifyContent: 'space-between' }]}>
-        <Text style={styles.categoryContentText}>{new Date().toISOString().split('T')[0]}</Text>
+      <View style={[styles.row2]}>
+        <Text style={[styles.value2, {maxWidth: '100%', width: 50, justifyContent: 'center'}]}>{new Date().toISOString().split('T')[0]}</Text>
       </View>
     </View>
   </View>
-  <View style={[styles.column]}>
-    <View style={styles.categoryContainer}>
+  <View style={[styles.columnContainer]}>
+    <View>
       <View style={styles.categoryHeader}>
         <Text style={styles.categoryHeaderText}>{client.name}</Text>
       </View>
-      <View style={styles.categoryContent}>
-        <Text style={styles.clientInfo}>{client.phoneNumber}</Text>
-        <Text style={styles.clientInfo}>{client.address}</Text>
-        <Text style={styles.clientInfo}>Dimensiune Piscină: {client.poolSize}</Text>
+      <View style={styles.collumn2}>
+        <Text style={[styles.row2, {color: 'white'}]}>{client.phoneNumber}</Text>
+        <Text style={[styles.row2, {color: 'white'}]}>{client.address}</Text>
+        <Text style={[styles.row2, {color: 'white'}]}>Piscină: {client.poolSize}</Text>
       </View>
     </View>
   </View>
@@ -285,16 +302,75 @@ return (
       </View>
     </View>
 
-    <View style={styles.line} />
-    <View style={styles.line} />
+
+    <View style={styles.titleContainer}>
+  <Text style={styles.title}>Recomandare</Text>
+</View>
+
+<View style={styles.line} />
 
 <View style={styles.columnContainer}>
+  <View style={styles.column}>
+    <View style={styles.row}>
+      <Text style={styles.label}>pH-</Text>
+      <Text style={styles.value2}>{recommendation.ph_minus_kg}</Text>
+    </View>
+    <View style={styles.row}>
+      <Text style={styles.label}>Cl. Tab.</Text>
+      <Text style={styles.value2}>{recommendation.tablets}</Text>
+    </View>
+    </View>
+    <View style={styles.column}>
 
-  <View style={styles.row2}>
-    <Text style={styles.label}>Recomandare</Text>
-    <Text style={styles.recommendation}>{recommendation}</Text>
+    <View style={styles.row2}>
+      <Text style={styles.label}>Clor Gr.</Text>
+      <Text style={styles.value2}>{recommendation.grams}</Text>
   </View>
+
+    <View style={styles.row2}>
+      <Text style={styles.label}>Antialgic</Text>
+      <Text style={styles.value2}>{recommendation.antialgae_liters}</Text>
+    </View>
+  </View>
+
+  </View>
+  <View style={styles.buttonContainer}>
+  <Button title="Show Data Table" onPress={() => setShowDataTable(!showDataTable)} />
 </View>
+
+{showDataTable && (
+  <View style={styles.tableContainer}>
+    <View style={styles.tableHeader}>
+      <Text style={styles.tableHeaderCell}>pH / Cl ppm</Text>
+      {poolData[0].pH[0].Cl_ppm.map((clData, index) => (
+        <Text key={index} style={styles.tableHeaderCell}>{clData.Cl}</Text>
+      ))}
+    </View>
+    {poolData
+      .filter(item => item.size === nearestPoolSize)
+      .map((item, index) => (
+        item.pH.map((pHData, pHIndex) => (
+          <View key={pHIndex} style={styles.tableRow}>
+            <Text style={styles.tableCell}>pH: {pHData.level}</Text>
+            
+            {pHData.Cl_ppm.map((clData, clIndex) => (
+              
+              <View key={clIndex} style={styles.tableCell}>
+              {pHData.ph_minus_kg && <Text style={styles.tableCell}>pH- {pHData.ph_minus_kg}</Text>}
+
+                {clData.tablets && <Text style={styles.tableText}>Cl Tab. {clData.tablets}</Text>}
+                {clData.grams && <Text style={styles.tableText}>Cl gr. {clData.grams}</Text>}
+                {clData.antialgae_liters && <Text style={styles.tableText}>Antialg {clData.antialgae_liters}</Text>}
+              </View>
+            ))}
+          </View>
+        ))
+      ))}
+  </View>
+)}
+
+
+
     <View style={styles.titleContainer}>
       <Text style={styles.title}>Tratament chimic</Text>
     </View>
@@ -464,7 +540,7 @@ return (
       <TouchableOpacity onPress={pickImage} style={styles.pictureButton}>
         <Text style={styles.pictureButtonText}>Poză final</Text>
       </TouchableOpacity>
-      {image && <Image source={{ uri: image }} style={{ width: 200, height: 200 }} />}
+      {endImage && <Image source={{ uri: endImage }} style={{ width: 200, height: 200 }} />}
     </View>
   </View>
 </View>
@@ -707,7 +783,68 @@ const styles = StyleSheet.create({
     maxWidth: 180,
  
   
-  }
+  },
+  box: {
+    flex: 1,
+    margin: 10,
+    padding: 10,
+    borderWidth: 1,
+    borderColor: '#000',
+    borderRadius: 4,
+  },
+  boxHeader: {
+    fontWeight: 'bold',
+    fontSize: 16,
+    marginBottom: 5,
+  },
+  boxText: {
+    fontSize: 14,
+  },
+  tableContainer: {
+    padding: 10,
+    
+  },
+  tableHeader: {
+    flexDirection: 'row',
+    marginBottom: 10,
+    borderBottomWidth: 1,
+    borderBottomColor: '#ccc',
+  },
+  tableHeaderCell: {
+    flex: 1,
+    fontWeight: 'bold',
+    margin: 2,
+    borderRightWidth:1,
+  },
+  tableRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: 10,
+    borderBottomColor: '#dcdcdc',
+    borderBottomWidth: 1,
+
+
+  },
+  tableCell: {
+    flex: 1,
+    color: 'white',
+
+
+  },
+  tableText: {
+    fontSize: 15,
+    color: 'white'
+  },
+  buttonContainer: {
+    marginTop: 20,
+  },
+  collumn2: {
+    flex: 1,
+    color: `white`,
+    
+  },
+  
 });
 
 

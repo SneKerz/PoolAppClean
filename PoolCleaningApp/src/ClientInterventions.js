@@ -3,8 +3,7 @@ import { View, Text, Button, StyleSheet, TextInput, ScrollView, TouchableHighlig
 import { useNavigation, useFocusEffect } from '@react-navigation/native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import Icon from 'react-native-vector-icons/FontAwesome';
-import InterventionFirst from './InterventionFirst';
-
+import AddIntervention from './AddIntervention';
 const ClientInterventions = () => {
   const [clients, setClients] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -71,7 +70,7 @@ const ClientInterventions = () => {
   );
  
   const handleNewScreenPress = () => {
-    navigation.navigate('InterventionFirst'); // Replace 'NewScreen' with the actual name of the new screen route
+    navigation.navigate('AddIntervention'); // Replace 'NewScreen' with the actual name of the new screen route
   };
  
   return (
@@ -96,7 +95,7 @@ const ClientInterventions = () => {
             {filteredClients.map((client) => (
               <TouchableHighlight
                 key={client.id}
-                onPress={() => navigation.navigate('InterventionFirst', { client })}
+                onPress={() => navigation.navigate('AddIntervention', { client })}
                 style={styles.button}
               >
                 <Text style={styles.buttonText}>{client.name}</Text>

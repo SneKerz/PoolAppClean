@@ -75,25 +75,21 @@ const ClientList = () => {
     <View style={styles.container}>
       <View style={styles.buttonContainer}>
         <Button
-          title="Add Client"
+          title="Adaugă client nou"
           onPress={() => navigation.navigate('AddClient')}
         />
       </View>
      
       <TextInput
         style={styles.searchBar}
-        placeholder="Search by client name"
+        placeholder="🔎 Căutare client după nume"
         value={searchQuery}
         onChangeText={setSearchQuery}
       />
-      <View style={styles.sortContainer}>
-        <TouchableOpacity onPress={handleSort}>
-          <Icon name="sort" size={24} color="#666666" /> 
-        </TouchableOpacity>
-      </View>
+     
       <ScrollView style={styles.scrollView}>
         {loading ? (
-          <Text style={styles.loadingText}>Loading clients...</Text>
+          <Text style={styles.loadingText}>Încărcare clienți...</Text>
         ) : (
           <View>
             {filteredClients.map((client) => (
@@ -119,7 +115,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#333333',
   },
   buttonContainer: {
-    marginBottom: 24,
+    marginBottom: 40,
+    marginTop: 40,
   },
   searchBar: {
     marginBottom: 16,

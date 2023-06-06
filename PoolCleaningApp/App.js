@@ -7,27 +7,26 @@ import ClientList from './src/ClientList';
 import ClientDetail from './src/ClientDetail';
 import AddClient from './src/AddClient';
 import AddIntervention from './src/AddIntervention';
-import InterventionFirst from './src/InterventionFirst';
 import ClientInterventions from './src/ClientInterventions';
 const Stack = createStackNavigator();
 
 const Drawer = createDrawerNavigator();
 const headerStyle = {
   headerStyle: {
-    backgroundColor: '#333',
+    backgroundColor: '#00000',
   },
-  headerTintColor: '#fff',
+  headerTintColor: '#fff3',
   headerTitleStyle: {
     fontWeight: 'bold',
+  
   },
 };
 const DrawerNavigator = () => {
   return (
     <Drawer.Navigator>
-      <Drawer.Screen name="ClientInterventions" component={ClientInterventions} options={{ title: 'Client Interventions' }} />
+      <Drawer.Screen name="ClientInterventions" component={ClientInterventions} options={{ title: 'Intervenție clienți' }} />
 
-      <Drawer.Screen name="ClientList" component={ClientList} options={{ title: 'Client List' }} />
-      <Drawer.Screen name="InterventionFirst" component={InterventionFirst} options={{title:`Intervention Firsst`}} />
+      <Drawer.Screen name="ClientList" component={ClientList} options={{ title: 'Adăugare și listă clienți' }} />
     </Drawer.Navigator> 
   );
 };
@@ -35,7 +34,6 @@ const App = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="DrawerNavigator" screenOptions={headerStyle}>
-      <Stack.Screen name="InrerventionFirst" component={InterventionFirst} options={{title: `Intervention First`}} />
 
         <Stack.Screen name="DrawerNavigator" component={DrawerNavigator} options={{ headerShown: false }} />
         <Stack.Screen name="ClientDetail" component={ClientDetail} options={{ title: 'Client Detail' }} />

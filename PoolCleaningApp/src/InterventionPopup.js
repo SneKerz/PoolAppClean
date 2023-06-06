@@ -60,32 +60,7 @@ return (
 </View>
 </View>
 <View style={styles.line} />
-<View style={styles.titleContainer}>
-<Text style={styles.title}>Recomandare</Text>
-</View>
-<View style={styles.line} />
-<View style={styles.row}>
-<View style={styles.collumn}>
-<Text style={styles.label}>Clor Tab</Text>
-<Text style={styles.value}>def</Text>
-</View>
-<View style={styles.collumn}>
-<Text style={styles.label}>Clor Gr.</Text>
-<Text style={styles.value}>def</Text>
-</View>
-</View>
-<View style={styles.line} />
-<View style={styles.row}>
-<View style={styles.collumn}>
-<Text style={styles.label}>pH</Text>
-<Text style={styles.value}>def</Text>
-</View>
-<View style={styles.collumn}>
-<Text style={styles.label}>Antialgic</Text>
-<Text style={styles.value}>def</Text>
-</View>
-</View>
-<View style={styles.line} />
+
 <View style={styles.titleContainer}>
 <Text style={styles.title}>Tratament chimic</Text>
 </View>
@@ -149,7 +124,8 @@ return (
 </View>
 <View style={styles.row}>
 <View style={styles.collumn2}>
-{intervention.interventionImage && <Image source={{ uri: intervention.interventionImage }} style={styles.image} />}
+{intervention.startImage && <Image source={{ uri: intervention.startImage }} style={styles.image} />}
+{intervention.endImage && <Image source={{ uri: intervention.endImage }} style={styles.image} />}
 </View>
 </View>
 <View style={styles.buttonContainer}>
@@ -256,9 +232,10 @@ fontSize: 16,
 color: '#FFFFFF',
 },
 image: {
-    width: 200,
+    width: 300,
     height: 200,
     marginBottom: 16,
+    
     borderRadius: 8,
   },
 });
